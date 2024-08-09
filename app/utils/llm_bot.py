@@ -101,7 +101,7 @@ def to_url(name: str, page: int) -> str:
     name = name.replace(" ", "%20")
     
     pdf_ip = os.environ.get('HTTP_HOST', 'localhost')
-    access_url = f'http://' + pdf_ip + name + '#page=' + str(page)
+    access_url = f'http://' + pdf_ip + ':8900/' + name + '#page=' + str(page)
     return access_url
 
 def get_user_chats(user: str):
