@@ -5,10 +5,21 @@ esta app ejecuta una APIREST para un chatbot con whatsapp
 el objetivo es que la salida de la consulta se envie via whatsapp
 al mismo tiempo permite la recepcion de whatsapp para generar la consulta
 
+Seguir este repositorio para crear la base de datos y las variables de entorno:
+https://github.com/Devnuvols/LLM-bootcamp-facilito.git
+
+Este repositorio es el mismo chatbot-RAG, con el codigo en backend y sustituyendo el frontend por el APIREST.
 
 ## Prerequisites
 
-exportar las variables de entorno antes de ejecutar la aplicacion
+exportar las variables de entorno antes de ejecutar la aplicacion.
+
+Crear aplicacion de Whatsapp Business API.
+
+ver aqui: https://developers.facebook.com/docs/whatsapp/
+
+Configurar aplicacion WhataApp, conectar el Webhook de la cuenta de Whatsapp al endpoint de esta
+apirest.
 
 ## Local testing
 
@@ -68,15 +79,3 @@ testing local:
 
 postman 
 2.-http://127.0.0.1:5002/status
-
-GET
-
-3.-POST http://127.0.0.1:5002/input
-
-{
-  "text": "como mido la presion de aire?"
-}
-
-4.-http://127.0.0.1:5002/data
-GET
-
