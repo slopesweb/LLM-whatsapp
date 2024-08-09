@@ -16,22 +16,16 @@ crear el entorno y instalar dependencias
 ```
 python3.10 -m venv .venv
 source .venv/bin/activate
-
 pip install -r requirements.txt
 ```
 
 ### Backend
-
-```
-uvicorn test_api:app --host 0.0.0.0 --port 5001
-```
 
 para acceso exterior debemos ejecutar: 
 
 ```
 uvicorn test_api:app --reload --port 5002 --host 0.0.0.0
 ```
-
 
 exportar las variables de entorno correspondientes:
 ```
@@ -45,13 +39,10 @@ export DOCS_PASSWORD=
 export DOCS_NAME=
 export HTTP_HOST=
 export OPENAI_API_KEY=
+export WABA=
+export token=
 
-export LANGCHAIN_TRACING_V2=true
-export LANGCHAIN_API_KEY=
-export LANGCHAIN_PROJECT=
 ```
-
-
 
 ## acceso webhook whatsapp: 
 
@@ -70,16 +61,18 @@ Esto requiere instalar en la VM:
 una vez funcionando podemos conectar el Webhook de la cuenta de Whatsapp Business a la url del webhook de la VM
 
 
-
 testing local:
+
 1.-http://127.0.0.1:5002/docs
 
 
 postman 
 2.-http://127.0.0.1:5002/status
+
 GET
 
 3.-POST http://127.0.0.1:5002/input
+
 {
   "text": "como mido la presion de aire?"
 }

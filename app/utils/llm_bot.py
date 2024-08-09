@@ -98,7 +98,7 @@ def normalize_str(a: str) -> str:
 
 def to_url(name: str, page: int) -> str:
     """Parses name and page into url from http server of pdfs."""
-    name = name.replace(" ", "%20").replace('local_storage/pdf/', '')
+    name = name.replace(" ", "%20")
     
     pdf_ip = os.environ.get('HTTP_HOST', 'localhost')
     access_url = f'http://' + pdf_ip + name + '#page=' + str(page)

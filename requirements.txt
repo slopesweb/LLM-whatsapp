@@ -1,6 +1,3 @@
-st-pages==0.4.5
-streamlit==1.30
-streamlit-feedback==0.1.2
 requests
 pyyaml
 pypdf2
@@ -17,12 +14,11 @@ geopy
 
 unidecode
 cryptography
-langchain
-langchain-openai
 
 fastapi
 requests
-streamlit-autorefresh
 
 pyjwt
 emoji
+uvicorn
+bcrypt

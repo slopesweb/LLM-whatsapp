@@ -10,10 +10,10 @@ def get_conn() -> connection:
     Connection to documents database.
     """
     return psycopg2.connect(
-        host=os.environ.get('DOCS_HOST', ''),
-        database=os.environ.get('DOCS_NAME', ''),
-        user=os.environ.get('DOCS_USER',''),
-        password=os.environ.get('DOCS_PASSWORD', '')
+        host=os.environ.get('DOCS_HOST'),
+        database=os.environ.get('DOCS_NAME'),
+        user=os.environ.get('DOCS_USER'),
+        password=os.environ.get('DOCS_PASSWORD')
     )
 
 def get_users_conn() -> connection:
@@ -21,10 +21,10 @@ def get_users_conn() -> connection:
     Connection to documents database.
     """
     return psycopg2.connect(
-        host=os.environ.get('USERS_HOST', ''),
-        database=os.environ.get('USERS_NAME', ''),
-        user=os.environ.get('USERS_USER',''),
-        password=os.environ.get('USERS_PASSWORD', '')
+        host=os.environ.get('USERS_HOST'),
+        database=os.environ.get('USERS_NAME'),
+        user=os.environ.get('USERS_USER'),
+        password=os.environ.get('USERS_PASSWORD')
     )
 
 class UserCheck(BaseModel):
