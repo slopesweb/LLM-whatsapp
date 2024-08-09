@@ -233,9 +233,9 @@ async def user_message_processor(message: str, user_phone_number: str, name: str
         
         If you cite the source, make the page look like these examples:
 
-        http://localhost/downloads/Manual-Usuario-AK-PC-781.pdf#page=24 --> [Manual-Usuario-AK-PC-781 (page 24)](http://localhost/downloads/Manual-Usuario-AK-PC-781.pdf#page=24)
-        http://matic-chatbot.westeurope.cloudapp.azure.com/downloads/Manual-del-usuario-SmartCella.pdf#page=20 --> [Manual-del-usuario-SmartCella (page 20)](http://matic-chatbot.westeurope.cloudapp.azure.com/downloads/Manual-del-usuario-SmartCella.pdf#page=20)
-        http://68.219.187.40/downloads/Ficha-t-cnica-Televis-IN.pdf#page=20 --> [Ficha-t-cnica-Televis-IN (page 20)](http://68.219.187.40/downloads/Ficha-t-cnica-Televis-IN.pdf#page=20)
+        http://localhost/downloads/Manual-Usuario-AK-PC-781.pdf#page=24 --> [Manual-Usuario-AK-PC-781 (page 24)](http://localhost:8900/local_storage/pdf/Manual-Usuario-AK-PC-781.pdf#page=24)
+        http://matic-chatbot.westeurope.cloudapp.azure.com/downloads/Manual-del-usuario-SmartCella.pdf#page=20 --> [Manual-del-usuario-SmartCella (page 20)](http://localhost:8900/local_storage/pdf/Manual-del-usuario-SmartCella.pdf#page=20)
+        http://68.219.187.40/downloads/Ficha-t-cnica-Televis-IN.pdf#page=20 --> [Ficha-t-cnica-Televis-IN (page 20)](http://localhost:8900/local_storage/pdf/Ficha-t-cnica-Televis-IN.pdf#page=20)
         """
         else: 
             modified_prompt = f"""
