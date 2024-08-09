@@ -14,10 +14,12 @@ from jwt import decode, InvalidTokenError
 from jwt import PyJWTError
 from jwt.exceptions import PyJWTError
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from utils.auth_whats import check_user_exists, get_chat_id,  insert_QA, update_feedback
 from utils.llm_bot import LLM_chat, get_context, get_messages_from_chat_id, respuesta_emoji, UserData
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from Langdetect import detect
 
 app = FastAPI()
